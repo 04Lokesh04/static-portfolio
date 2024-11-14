@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family:Tahoma, sans-serif ;
+}
+@keyframes carousel {
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.animate-carousel{
+    animation: carousel 10s ease-in-out forwards;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="bg-gray-900 p-4 h-16 sticky top-0 z-30">
+        <div class="flex justify-between">
+            <div class="text-white text-xl font-semibold">Lokesh</div>
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="bg-gray-900 hover:text-orange-600  border-white text-white rounded-sm">
+                    &#9776;
+                </button>
+            </div>
+            <ul class="hidden lg:flex space-x-10">
+                <li class="text-white text-base hover:text-orange-600 list-none"><a href="#Home">Home</a></li>
+                <li class="text-white text-base hover:text-orange-600 list-none"><a href="#about">About</a></li>
+                <li class="text-white text-base hover:text-orange-600 list-none"><a href="#projects">Projects</a></li>
+                <li class="text-white text-base hover:text-orange-600 list-none"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <ul id="mobile-menu" class="lg:hidden w-full hidden bg-gray-900 flex flex-col items-start p-4 z-30">
+            <li class="text-white text-base hover:text-orange-600 list-none  my-2"><a href="#Home">Home</a></li>
+            <li class="text-white text-base hover:text-orange-600 list-none my-2"><a href="#about">About</a></li>
+            <li class="text-white text-base hover:text-orange-600 list-none my-2"><a href="#projects">Projects</a></li>
+            <li class="text-white text-base hover:text-orange-600 list-none my-2"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="Home" class="relative h-screen flex flex-col justify-center items-center bg-[url('/assets/static-portfolio-background-image.jpeg')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="overflow-hidden z-10">
+            <div class="flex animate-carousel ">
+                <div class="min-w-full flex flex-col justify-center items-center h-50">
+                    <p class="text-stone-100 text-3xl md:text-7xl mb-2.5 ">Hi, I'm Lokesh S</p>
+                    <p class="text-stone-100 text-lg md:text-3xl">Welcome to my Portfolio</p>
+                </div>
+                <div class="min-w-full  flex flex-col justify-center items-center h-50">
+                    <p class="text-stone-100 text-3xl md:text-7xl mb-2.5">I'm a Full Stack Developer</p>
+                    <p class="text-stone-100 text-lg md:text-3xl">Expert in MERN Stack</p>
+                </div>
+            </div>
+            
+        </div>
+            <a class="z-20" href="#about">
+                <button class="bg-transparent border-4 border-slate-500/100 z-20 h-12 w-32 my-12 rounded-xl text-stone-100
+            hover:bg-white hover:text-black hover:border-0 ">Read More</button>
+            </a>
+    </div>
+
+    <!--About me section-->
+    <div id="about" class="min-h-screen w-full bg-gradient-to-r from-black  via-sky-950 via-85% to-black">
+        <div class="container h-full  w-full mx-auto pt-8">
+            <div class="flex flex-col justify-center items-center w-full mb-6">
+                <h1 class="text-6xl font-semibold text-slate-300 my-6">About Me</h1>
+                <div class="h-2 w-11 bg-orange-700"></div>
+            </div>
+            <div class="h-auto w-full px-10 py-4 flex flex-wrap justify-center items-center">
+                <div class="w-full md:w-2/3 lg:w-2/3 p-4 flex flex-col justify-center items-center md:flex md:flex-row md:justify-center md:items-center ">
+                    <img class="h-40 w-40 rounded-full m-10 xs:mb-20 sm:mb-20 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEEZtpNjffKVMqUuYg88JZozBJbEuQa2z0dQ&s" alt="profile-pic"/>
+                    <p class="text-slate-300 text-lg">Hi I'm Lokesh and I'm a passionate MERN stack developer skilled in JavaScript, React, Node.js, MongoDB, and SQLite, with a knack for building dynamic, user-friendly applications. With a foundation in Python and data structures, I enjoy problem-solving and tackling complex challenges. I’m also known for my adaptability, strong communication, and team collaboration skills, which enable me to contribute effectively to meaningful projects. I’m continuously learning to stay updated with tech trends, and I'm excited to bring my skills to impactful, real-world solutions. Let’s connect and explore new possibilities together!</p>
+                </div>
+                <div class="w-auto  p-4 flex flex-col justify-center items-start">
+                    <div class="flex flex-col w-80  my-2">
+                        <label class="text-slate-300 text-sm mb-2" for="file1">HTML, CSS & Javascript</label>
+                        <progress class="h-4 w-full " id="file1" value="92" max="100"> 92% </progress>
+                    </div>
+                    <div class="flex flex-col w-80 my-2">
+                        <label class="text-slate-300 text-sm mb-2" for="file2">React JS</label>
+                        <progress class="h-4 w-full " id="file2" value="80" max="100"> 80% </progress>
+                    </div>
+                    <div class="flex flex-col w-80 my-2">
+                        <label class="text-slate-300 text-sm mb-2" for="file3">Node Js</label>
+                        <progress class="h-4 w-full " id="file3" value="80" max="100"> 80% </progress>
+                    </div>
+                    <div class="flex flex-col w-80 my-2">
+                        <label class="text-slate-300 text-sm mb-2" for="file4">SQLite & MongoDB</label>
+                        <progress class="h-4 w-full " id="file4" value="90" max="100"> 90% </progress>
+                    </div>
+                    <div class="flex flex-col w-80 my-2">
+                        <label class="text-slate-300 text-sm mb-2" for="file5">Python</label>
+                        <progress class="h-4 w-full " id="file5" value="90" max="100"> 90% </progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Projects Section-->
+    <div id="projects" class="min-h-screen w-full bg-gradient-to-r from-black  via-sky-950 via-85% to-black ">
+        <div class="container w-full mx-auto pb-20">
+            <div class="flex flex-col justify-center items-center w-full mb-6">
+                <h1 class="text-6xl font-semibold text-slate-300 my-6">Projects</h1>
+                <div class="h-2 w-11 bg-orange-700"></div>
+            </div>
+            <div class=" w-full md:px-20 py-8 flex flex-wrap justify-center items-center">
+                <div class="grid w-full px-20 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="md:mx-5 w-full h-64 flex flex-col justify-center items-center relative group bg-green-400 shadow-lg rounded-lg overlflow-hidden">
+                        <p class="text-black text-slate-700 text-3xl font-semibold">Spotify Clone</p>
+                        <div class="absolute flex flex-col justify-center items-center inset-0 bg-black bg-opacity-50 text-white opacity-0 rounded-lg
+                        group-hover:opacity-100 transition-opacity duration-600">
+                            <a class="border-2 border-white text-white bg-transparent rounded-full h-14 w-14 text-xl pt-3 ps-3 hover:text-red-600 hover:border-2 hover:border-red-600" href="https://lokispotifyc.ccbp.tech/" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="md:mx-5 w-full h-64 flex flex-col justify-center items-center relative group bg-red-400 shadow-lg rounded-lg overlflow-hidden">
+                        <p class="text-black text-slate-700 text-3xl font-semibold">Netflix Clone</p>
+                        <div class="absolute flex flex-col justify-center items-center inset-0 bg-black bg-opacity-50 text-white opacity-0 rounded-lg
+                        group-hover:opacity-100 transition-opacity duration-600">
+                            <a class="border-2 border-white text-white bg-transparent rounded-full h-14 w-14 text-xl pt-3 ps-3 hover:text-red-600 hover:border-2 hover:border-red-600" href="https://lokeshnetflixc.ccbp.tech/" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="md:mx-5 w-full h-64 flex flex-col justify-center items-center relative group bg-rose-400 shadow-lg rounded-lg overlflow-hidden">
+                        <p class="text-black text-slate-700 text-3xl font-semibold">Airbnb Clone</p>
+                        <div class="absolute flex flex-col justify-center items-center inset-0 bg-black bg-opacity-50 text-white opacity-0 rounded-lg
+                        group-hover:opacity-100 transition-opacity duration-600">
+                            <a class="border-2 border-white text-white bg-transparent rounded-full h-14 w-14 text-xl pt-3 ps-3 hover:text-red-600 hover:border-2 hover:border-red-600" href="https://airbnb-static-clone-product-listing-page-6tqsc3yvb.vercel.app/" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="md:mx-5 w-full h-64 flex flex-col justify-center items-center relative group bg-fuchsia-400 shadow-lg rounded-lg overlflow-hidden">
+                        <p class="text-black text-slate-700 text-3xl font-semibold">Emoji Game</p>
+                        <div class="absolute flex flex-col justify-center items-center inset-0 bg-black bg-opacity-50 text-white opacity-0 rounded-lg
+                        group-hover:opacity-100 transition-opacity duration-600">
+                            <a class="border-2 border-white text-white bg-transparent rounded-full h-14 w-14 text-xl pt-3 ps-3 hover:text-red-600 hover:border-2 hover:border-red-600" href="https://lokeshemojigame.ccbp.tech/" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="md:mx-5 w-full h-64 flex flex-col justify-center items-center relative group bg-blue-400 shadow-lg rounded-lg overlflow-hidden">
+                        <p class="text-black text-slate-700 text-3xl font-semibold">NxtAssess</p>
+                        <div class="absolute flex flex-col justify-center items-center inset-0 bg-black bg-opacity-50 text-white opacity-0 rounded-lg
+                        group-hover:opacity-100 transition-opacity duration-600">
+                            <a class="border-2 border-white text-white bg-transparent rounded-full h-14 w-14 text-xl pt-3 ps-3 hover:text-red-600 hover:border-2 hover:border-red-600" href="https://loki0404.ccbp.tech/login" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="md:mx-5 w-full h-64 flex flex-col justify-center items-center relative group bg-purple-400 shadow-lg rounded-lg overlflow-hidden">
+                        <p class="text-black text-slate-700 text-3xl font-semibold">Jobby App</p>
+                        <div class="absolute flex flex-col justify-center items-center inset-0 bg-black bg-opacity-50 text-white opacity-0 rounded-lg
+                        group-hover:opacity-100 transition-opacity duration-600">
+                            <a class="border-2 border-white text-white bg-transparent rounded-full h-14 w-14 text-xl pt-3 ps-3 hover:text-red-600 hover:border-2 hover:border-red-600" href="https://lokesh0404.ccbp.tech/login" target="_blank"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact section -->
+
+    <div id="contact" class="min-h-screen w-full bg-gradient-to-r from-black  via-sky-950 via-85% to-black">
+        <div class="container flex-col justify-center items-center w-full mx-auto pt-10">
+            <div class="flex flex-col justify-center items-center w-full mb-6">
+                <h1 class="text-6xl font-semibold text-slate-300 my-6">Contact Me</h1>
+                <div class="h-2 w-11 bg-orange-700"></div>
+            </div>
+
+            <div class=" w-full md:px-20 py-8 flex flex-wrap justify-center items-center">
+                <p class="text-lg px-4 md:text-3xl text-slate-300 mb-3">Ready to start something great? Contact me now.</p>
+            </div>
+
+            <form class="w-full px-10 md:px-20 py-8 flex flex-col justify-center items-center">
+                <div class="w-full md:w-1/2 mb-8">
+                    <label class="text-slate-300 text-xl">Name</label>
+                    <input class="bg-transparent w-full my-3 border-b-2 border-slate-300 focus:outline-none text-slate-300" placeholder="Enter your name" type="text" />
+                </div>
+                <div class="w-full md:w-1/2 mb-8">
+                    <label class="text-slate-300 text-xl">Email</label>
+                    <input class="bg-transparent w-full my-3 border-b-2 border-slate-300 focus:outline-none text-slate-300" placeholder="Enter your Email" type="email" />
+                </div>
+                <div class="w-full md:w-1/2 mb-8">
+                    <label class="text-slate-300 text-xl">Message</label>
+                    <textarea class="bg-transparent w-full my-3 border-b-2 border-slate-300 focus:outline-none text-slate-300" placeholder="Enter your Message"></textarea>
+                </div>
+                <div class="w-full md:w-1/2 mb-8">
+                    <button class="bg-transparent border-4 border-slate-500/100 z-20 h-12 w-32 rounded-xl text-stone-100
+                    hover:bg-white hover:text-black hover:border-0 ">Message</button>
+                </div>
+                
+            </form>
+        </div>
+
+    </div>
+<footer class="bg-gray-900 p-4 h-16 flex flex-row justify-center items-center">
+    <div class="flex flex-row justify-center items-center px-2">
+        <a class="border-2 border-white text-white bg-transparent rounded-full h-14 w-14 text-2xl pt-3 ps-4  mx-4 hover:text-black  hover:bg-white" href=""><i class="fab fa-linkedin-in"></i></a>
+        <a class="border-2 border-white text-white bg-transparent rounded-full h-14 w-14 text-2xl pt-3 ps-4 mx-4  hover:text-black hover:bg-white" href=""><i class="fab fa-twitter"></i></a>
+        <a class="border-2 border-white text-white bg-transparent rounded-full h-14 w-14 text-2xl pt-3 ps-4  mx-4 hover:text-black  hover:bg-white" href=""><i class="fab fa-github"></i></a>
+    </div>
+</footer>
+    
+    <script>
+        const toggler=document.getElementById('menu-toggle')
+        toggler.addEventListener('click', ()=>{
+            const mobiletoggle=document.getElementById('mobile-menu')
+            mobiletoggle.classList.toggle('hidden')
+        })
+    </script>
+</body>
+</html>
